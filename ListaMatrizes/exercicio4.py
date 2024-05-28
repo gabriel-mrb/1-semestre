@@ -1,5 +1,5 @@
 # Crie uma função que retorne a soma de uma coluna escolhida pelo
-# usuário (a coluna escolhida deve ser passada por parâmetro). Lembrese de fazer a validação se a coluna escolhida existe.
+# usuário (a coluna escolhida deve ser passada por parâmetro). Lembre-se de fazer a validação se a coluna escolhida existe.
 
 
 import random
@@ -33,5 +33,12 @@ linhas=int(input('informe o numero de linhas desejadas: '))
 colunas=int(input('Informe o numero de colunas desejadas: '))
 matriz=nova_matriz(linhas,colunas)
 imprimir_matriz(matriz)
-soma_col = int(input(f'Para realizar a soma de uma coluna, informe um valor entre 1 - {colunas}: '))
-soma_coluna_matriz(soma_col,linhas)
+
+while True:
+    soma_col = int(input(f'Para realizar a soma de uma coluna, informe um valor entre 1 - {colunas}: '))
+    if soma_col<1 or soma_col>colunas:
+        print('Valor Invalido!')
+        continue
+    else:
+        soma_coluna_matriz(soma_col,linhas)
+        break
