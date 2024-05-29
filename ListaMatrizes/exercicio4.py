@@ -1,6 +1,6 @@
 # Crie uma função que retorne a soma de uma coluna escolhida pelo
 # usuário (a coluna escolhida deve ser passada por parâmetro). Lembre-se de fazer a validação se a coluna escolhida existe.
-
+teste
 
 import random
 
